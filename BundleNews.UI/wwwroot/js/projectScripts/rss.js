@@ -4,9 +4,8 @@
 
 
 function AddRSS() {
-    StartLoader();
-    var url = $('#insert_rssGenerator_link').val();
-    var name = $("#insert_rssGenerator_name").val();
+    var url = $('#insert_rss_link').val();
+    var name = $("#insert_category_name").val();
     $.ajax({
         type: "POST",
         url: "Rss/RunRssGenerator",
@@ -14,14 +13,16 @@ function AddRSS() {
         data: { 'url': url, 'name': name },
         success: function (data) {
             ClearFilter();
+            if (data.val == "Ekleme başarılı")
+                toastr.success(data.val);
+            else
+                toastr.error(data.val);
         }
     });
 }
 
 
 function ClearFilter() {
-    StartLoader();
-    $("#select_order").val(-1);
-    $('#search_box').val('');
-    StopLoader();
+    $("#insert_rss_link").val('');
+    $('#insert_category_name').val('');
 }
