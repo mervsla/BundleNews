@@ -1,48 +1,174 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - BundleNews.UI</title>
+    <title>Bundle News</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/layout.css" rel="stylesheet" />
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BundleNews.UI</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+    <div id="_layout">
+        <div>
+            <nav>
+                <ul class="bundleNavbar" style="display: block;">
+                    <div class="bundleNavbarDiv">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANoSURBVHgB7dzbcVJRGIbhxa4tJGWIFSRWYKwgUoFYBofaQL4LEs2AnP/1H97nJk5wxoHvHcOEvVdrAAAAAAAAAAAAAAAAAAAAAAAACGnUjCyXy++j0ehFf95sNrPxePyt4V2v18ckgO2Te9t+efnnHx6NZg8PD18b2mq1+rUdffL399br9Y+np6fXdmdDszH5/A09YT3xVty+8WUYhudmwCqAvapHcGh8S1YBTA89UDWCY+NvH/vdDJi9CVwsFrPtz/0vhx6v9J7glPEfHx8nzYBZAEIEvsYX0wCkcgTexhfzAKRiBB7Hly4BSKUIvI4v3QKQChF4Hl+6BiCZI/A+vnQPQDJGEGF8cRGAZIogyvjiJgDJEEGk8cVVABI5gmjji7sAJGIEEccXlwFIpAiiji9uA5AIEUQeX1wHIJ4jiD6+uA9APEaQYXwJEYB4iiDL+BImAPEQQabxJVQA0jOCbONLuACkRwQZx5eQAYhlBFnHl7ABiEUEmceX0AHIPSPIPr6ED0DuEUGF8SVFAHLLCKqML2kCkFtEUGl8SRWAXBNBtfElXQBySQQVx5eUAcg5EVQdX9IGIKdEoK9Vx5fUAcixCP4n+/iSPgC5JIIK40uJAOScCKqML2UCkFMiqDS+dD0jyNowDJtb/J1MyvwPcM6BTJFuQ7tWiQAuOY2rSgTpA7jmKLYKEaQO4NSj2KLfkHqNtAGc8+vdygdXpQzgkt/tV40gXQDXfLBTMYJUAdziU71qEaQJ4JYf6VaKIEUA9/g8v0oE4QO458UcFSIIHYDFlTzZIwgbgOVlXJkjCBlAj2v4skYQLoCeF3BmjCBUAB6u3s0WQZgAPF26nSmCEAF4vG4/SwTuA/B800aGCFwHEOGOnegRuA0g0u1akSNwGUDEe/WiRuAugMg3akaMwFUAGe7SjRaBmwAy3aIdKQIXAWS8Pz9KBN0DyHw4Q4QIugZQ4WQO7xF0C6DSsSyeI+gSQMUzebxGYB5A5QOZPEZgGkDl8Xe8RWAWAON/8BSByQkhy+XyjfE/6Lnu7kzeR6/VfD5/bQasjoiZHHqg2vg7xyIYhuG5Geh6RlDV8XeORWDBKoDp529UH3/nUARWYVi+Cfy5fVK7Nz7T8Xj82vCO1wcAAAAAAAAAAAAAAAAAAAAAAABn+QNSaoRq2XzpCQAAAABJRU5ErkJggg=="
+                             width="32px" alt="" class="bundleNavbarClose">
+                    <li class="bundleNavbarLogo">
+                        <img src="https://www.bundle.app/_nuxt/img/bundlelogo.31534f7.png"
+                             width="128px">
+                    </li>
+                    <br>
+                    <div>
+                        <a href="/gundem" class="bundleRouter" style=" color: #4b4b4b;">
+                    <li class="bundleNavbarItem bundleNavbarItemActive">
+                        Gündem
+                    </li>
+                    </a>
+        </div>
+        <div>
+            <a href="/bilim" class="bundleRouter">
+                <li class="bundleNavbarItem">
+                    Bilim &amp; Teknoloji
+                </li>
+            </a>
+        </div>
+        <div>
+            <a href="/finans" class="bundleRouter">
+                <li class="bundleNavbarItem">
+                    Finans
+                </li>
+            </a>
+        </div>
+        <div>
+            <a href="/yasam" class="bundleRouter">
+                <li class="bundleNavbarItem">
+                    Yaşam
+                </li>
+            </a>
+        </div>
+        <div>
+            <a href="/spor" class="bundleRouter">
+                <li class="bundleNavbarItem">
+                    Spor
+                </li>
+            </a>
+        </div>
+        <div style="margin-top:30px">
+            <div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider">
+                        <span class="sliderThemeText">LIGHT</span>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
+    </ul>
+    </nav>
+
+    <div class="bundleHeaderContainer">
+        <div class="row" style="width: 100%;max-width:1024px;margin: 0 auto;">
+            <div class="bundleHeader">
+                <img src="https://www.bundle.app/_nuxt/img/bundlemobil.79064cd.svg" width="120px" class="bundleHeaderStaticPagesLogo" style="cursor: pointer; float: left; display: none;"> <!---->
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAECSURBVHgB7dxdDcIwFIDROxSAAySANJQgAQvgAAcgAQlzMMqPg3aM5p6TNHtddpume/kiAAAAAAAAAAAAAAAAAICeDNHANE3b8jiVtStrHcztXNZhGIZHVKreAN/h38Lgf20sa1+7CVZR7xiGv4TXNz9FpRYnwBQsZSwnwCYqtDgBxmAp1Sdviw1wD5ZyiUougf36j0vg9wX28fk1YX6vwV+jwfABAAAAAAAAAAAAAIC+6QP0SR8AfYDs9AHQB8hOHyA5fYDE9AGS0gcAAAAAAAAAAAAAAADe9AH6pA+APkB2+gDoA2SnD5CcPkBi+gBJ6QMAAAAAAAAAAAAAAAAAQGJPPIteKssaQAUAAAAASUVORK5CYII=" width="32px" alt="" class="bundleHeaderIconTablet visibleNavbarTablet floatLeftForTablet">
+                <img src="https://www.bundle.app/_nuxt/img/bundleNavbarSearchDark.20d73a1.png" width="24px" alt="" class="visibleNavbarDesktop floatNoneForTablet" style="margin-right: 1px; margin-top: -3px;">
+                <img src="https://www.bundle.app/_nuxt/img/bundleHeaderSearchGrey.d8bed3a.png" width="24px" alt="" class="visibleNavbarDesktop floatNoneForTablet" style="margin-right:1px;margin-top:-3px;display:none;">
+                <img src="https://www.bundle.app/_nuxt/img/bundleHeaderSearchWhite.741704f.png" width="18px" alt="" class="visibleNavbarTablet floatNoneForTablet" style="margin-left: 30px; margin-right: -20px;">
+                <div class="bundleHeaderItem" style="margin-top: -8px">
+                    <input type="text" name="HeaderSearchInput" placeholder="Haber ara" value="" class="bundleHeaderItemSearchBox" data-v-127e1cb8=""> <img src="https://www.bundle.app/_nuxt/img/bundleHeaderSearchArrow.f6d2854.png" alt="" class="bundleHeaderItemSearchBoxImage" style="display:none;">
+                </div>
+                <div class="bundleHeaderItem" style="float: right">
+                    <div class="bundleHeaderItem" style="margin-right:60px">
+                        <span class="FinanceSwitcher">
+                            <img src="https://www.bundle.app/_nuxt/img/bundleNavbarWeatherDark.151b637.png" width="20px" alt="" class="visibleNavbarTablet"> <span class="bundleHeaderText">
+                                <span class="financeCode">USD</span>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADvSURBVHgBtZK9EYJAEIXfQWBKCdgBBs6IkSVIB3SgHViKJRBQgIZmlqAlkJpw3jGIsNwv6BcwzLHs7vvmgAmsCySbArFLLYMnsjELcBGv0aLG8pqhMtUH8IXhJJ6xHPAKcbaVew0Q2+eMIe8OOPZpgSOM+7g3/6iJyaeK11jdMjxV/7kn+KqhRMygymnASA2FY6dTZVVkUENRqrIn0KuhKFUZB6QlDkY1FIUqraJWzV1uBj8GqrQJ2ri+zSUDVcoBUo2Mi6n0VI0UzVBDaVSNEsxQQ2lUhf2TbSmuJPe4NXbiTlGr5oEf0ykSkxL8gTfWKEAXe/Rm3QAAAABJRU5ErkJggg==" width="7px" alt="" class="visibleNavbarDesktop" style="margin-right: 3px;margin-left:5px;margin-top:-1px">
+                                <span class="financeCurrency">13.497</span>
+                            </span>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACJSURBVHgB3dCxDYAgEIXhF12EcSwdgRHYyBEcgRXcwBGwtVJMLMjlgnAcjX/yEiou+YA/Ncdd2huSA1vcAeXG5P18fsZN6JyHHpHnDpi4oPB5eP9icwoHHNCPyqMgAxlVloYmofqkodVQLRBkUEa1o4KGVkJl0ViOSkRDM+CpmmhoHJWFcisqaG66061u5BVPtQAAAABJRU5ErkJggg==" width="7px" alt="" class="visibleNavbarDesktop" style="margin-right: 20px; margin-left: 3px; margin-top: -1px;">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAClSURBVHgB1ZBhDcIwEEa/QwESZgEHSEACEmoBJUiYhOEAHAwH4ODj+gNCltvWa+/PXnK5pk3zkgdsHfkeSJ509Qhm93d+6LwRzE8gIk9dFwQj0wtNNeg6IoabJeh03XX2aCPnPpgvKklsJy3qcyrWM2CNnErnRT/5T4cSWJcqwQN9qa7wwvJUI0vTGJKSVGe0sJLKn8YQzKUaq9MYkhSexpD0njQfjJ/yXuRdCl4AAAAASUVORK5CYII=" width="7px" alt="" class="visibleNavbarDesktop" style="margin-right:20px;margin-left:5px;margin-top:-1px;display:none;">
+                            <ul class="FinanceSwitcherUl" style="display:none">
+                                <li style="color: var(--navbar_item_color);">
+                                    <span>
+                                        <span class="financeItemName">RUB</span>
+                                        <img data-v-6c4b68c4="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADvSURBVHgBtZK9EYJAEIXfQWBKCdgBBs6IkSVIB3SgHViKJRBQgIZmlqAlkJpw3jGIsNwv6BcwzLHs7vvmgAmsCySbArFLLYMnsjELcBGv0aLG8pqhMtUH8IXhJJ6xHPAKcbaVew0Q2+eMIe8OOPZpgSOM+7g3/6iJyaeK11jdMjxV/7kn+KqhRMygymnASA2FY6dTZVVkUENRqrIn0KuhKFUZB6QlDkY1FIUqraJWzV1uBj8GqrQJ2ri+zSUDVcoBUo2Mi6n0VI0UzVBDaVSNEsxQQ2lUhf2TbSmuJPe4NXbiTlGr5oEf0ykSkxL8gTfWKEAXe/Rm3QAAAABJRU5ErkJggg==" width="9px" alt="" class="visibleNavbarDesktop" style="margin-right: 6px; margin-left: 6px; margin-top: -3px;">
+                                        <span class="financeItemPrice">0.1755</span>
+                                    </span> <br>
+                                    <div style="margin-top: 2px;"></div>
+                                    <span class="financeItemFullName">Rus Rublesi</span>
+                                </li>
+                                <li style="color: var(--navbar_item_color);">
+                                    <span>
+                                        <span class="financeItemName">EUR</span>
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADvSURBVHgBtZK9EYJAEIXfQWBKCdgBBs6IkSVIB3SgHViKJRBQgIZmlqAlkJpw3jGIsNwv6BcwzLHs7vvmgAmsCySbArFLLYMnsjELcBGv0aLG8pqhMtUH8IXhJJ6xHPAKcbaVew0Q2+eMIe8OOPZpgSOM+7g3/6iJyaeK11jdMjxV/7kn+KqhRMygymnASA2FY6dTZVVkUENRqrIn0KuhKFUZB6QlDkY1FIUqraJWzV1uBj8GqrQJ2ri+zSUDVcoBUo2Mi6n0VI0UzVBDaVSNEsxQQ2lUhf2TbSmuJPe4NXbiTlGr5oEf0ykSkxL8gTfWKEAXe/Rm3QAAAABJRU5ErkJggg==" width="9px" alt="" class="visibleNavbarDesktop" style="margin-right: 6px; margin-left: 6px; margin-top: -3px;"> <span class="financeItemPrice">15.422</span>
+                                    </span> <br>
+                                    <div style="margin-top: 2px;"></div> <span class="financeItemFullName">Euro</span>
+                                </li>
+                                <li style="color: var(--navbar_item_color);">
+                                    <span>
+                                        <span class="financeItemName">GBP</span>
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADvSURBVHgBtZK9EYJAEIXfQWBKCdgBBs6IkSVIB3SgHViKJRBQgIZmlqAlkJpw3jGIsNwv6BcwzLHs7vvmgAmsCySbArFLLYMnsjELcBGv0aLG8pqhMtUH8IXhJJ6xHPAKcbaVew0Q2+eMIe8OOPZpgSOM+7g3/6iJyaeK11jdMjxV/7kn+KqhRMygymnASA2FY6dTZVVkUENRqrIn0KuhKFUZB6QlDkY1FIUqraJWzV1uBj8GqrQJ2ri+zSUDVcoBUo2Mi6n0VI0UzVBDaVSNEsxQQ2lUhf2TbSmuJPe4NXbiTlGr5oEf0ykSkxL8gTfWKEAXe/Rm3QAAAABJRU5ErkJggg==" width="9px" alt="" class="visibleNavbarDesktop" style="margin-right: 6px; margin-left: 6px; margin-top: -3px;">
+                                        <span class="financeItemPrice">18.461</span>
+                                    </span> <br> <div style="margin-top: 2px;"></div> <span class="financeItemFullName">İngiliz Sterlini</span>
+                                </li>
+                                <li data-v-6c4b68c4="" style="color: var(--navbar_item_color);">
+                                    <span>
+                                        <span class="financeItemName">USD</span>
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADvSURBVHgBtZK9EYJAEIXfQWBKCdgBBs6IkSVIB3SgHViKJRBQgIZmlqAlkJpw3jGIsNwv6BcwzLHs7vvmgAmsCySbArFLLYMnsjELcBGv0aLG8pqhMtUH8IXhJJ6xHPAKcbaVew0Q2+eMIe8OOPZpgSOM+7g3/6iJyaeK11jdMjxV/7kn+KqhRMygymnASA2FY6dTZVVkUENRqrIn0KuhKFUZB6QlDkY1FIUqraJWzV1uBj8GqrQJ2ri+zSUDVcoBUo2Mi6n0VI0UzVBDaVSNEsxQQ2lUhf2TbSmuJPe4NXbiTlGr5oEf0ykSkxL8gTfWKEAXe/Rm3QAAAABJRU5ErkJggg==" width="9px" alt="" class="visibleNavbarDesktop" style="margin-right: 6px; margin-left: 6px; margin-top: -3px;"> <span data-v-6c4b68c4="" class="financeItemPrice">13.497</span>
+                                    </span> <br data-v-6c4b68c4=""> <div data-v-6c4b68c4="" style="margin-top: 2px;"></div> <span data-v-6c4b68c4="" class="financeItemFullName">Amerikan Doları</span>
+                                </li>
+                            </ul>
+                        </span>
+                    </div> <div class="bundleHeaderItem" data-v-127e1cb8=""><span class="WeatherSwitcher" data-v-246a7d0f="" data-v-127e1cb8=""><img src="https://static.bundle.app/bundleWebWeatherIcons/partlycloudy_day.png" width="22px" alt="" class="visibleNavbarDesktop weatherSwitcherEmoji" style="position:absolute;left:-20px" data-v-246a7d0f=""> <img src="/_nuxt/img/bundleNavbarWeatherDark.151b637.png" width="20px" alt="" class="visibleNavbarTablet" data-v-246a7d0f=""> <span class="bundleHeaderText" data-v-246a7d0f="">IST. 5°</span> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACJSURBVHgB3dCxDYAgEIXhF12EcSwdgRHYyBEcgRXcwBGwtVJMLMjlgnAcjX/yEiou+YA/Ncdd2huSA1vcAeXG5P18fsZN6JyHHpHnDpi4oPB5eP9icwoHHNCPyqMgAxlVloYmofqkodVQLRBkUEa1o4KGVkJl0ViOSkRDM+CpmmhoHJWFcisqaG66061u5BVPtQAAAABJRU5ErkJggg==" width="7px" alt="" class="visibleNavbarDesktop" style="margin-right: 20px; margin-left: 5px; margin-top: -1px;" data-v-246a7d0f=""> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAClSURBVHgB1ZBhDcIwEEa/QwESZgEHSEACEmoBJUiYhOEAHAwH4ODj+gNCltvWa+/PXnK5pk3zkgdsHfkeSJ509Qhm93d+6LwRzE8gIk9dFwQj0wtNNeg6IoabJeh03XX2aCPnPpgvKklsJy3qcyrWM2CNnErnRT/5T4cSWJcqwQN9qa7wwvJUI0vTGJKSVGe0sJLKn8YQzKUaq9MYkhSexpD0njQfjJ/yXuRdCl4AAAAASUVORK5CYII=" width="7px" alt="" class="visibleNavbarDesktop" style="margin-right:20px;margin-left:5px;margin-top:-1px;display:none;" data-v-246a7d0f=""> <ul class="WeatherSwitcherUl" style="display:none" data-v-246a7d0f=""><li data-v-246a7d0f="" style="color: var(--navbar_item_color);"><img data-v-246a7d0f="" src="https://static.bundle.app/bundleWebWeatherIcons/partlycloudy_day.png" width="18px" style="margin-right: 12px; margin-top: -3px;"> İstanbul 5°</li><li data-v-246a7d0f="" style="color: var(--navbar_item_color);"><img data-v-246a7d0f="" src="https://static.bundle.app/bundleWebWeatherIcons/clearsky_day.png" width="18px" style="margin-right: 12px; margin-top: -3px;"> Ankara 0°</li><li data-v-246a7d0f="" style="color: var(--navbar_item_color);"><img data-v-246a7d0f="" src="https://static.bundle.app/bundleWebWeatherIcons/clearsky_day.png" width="18px" style="margin-right: 12px; margin-top: -3px;"> İzmir 6°</li><li data-v-246a7d0f="" style="color: var(--navbar_item_color);"><img data-v-246a7d0f="" src="https://static.bundle.app/bundleWebWeatherIcons/partlycloudy_day.png" width="18px" style="margin-right: 12px; margin-top: -3px;"> Bursa 5°</li><li data-v-246a7d0f="" style="color: var(--navbar_item_color);"><img data-v-246a7d0f="" src="https://static.bundle.app/bundleWebWeatherIcons/clearsky_day.png" width="18px" style="margin-right: 12px; margin-top: -3px;"> Gaziantep 0°</li><li data-v-246a7d0f="" style="color: var(--navbar_item_color);"><img data-v-246a7d0f="" src="https://static.bundle.app/bundleWebWeatherIcons/clearsky_day.png" width="18px" style="margin-right: 12px; margin-top: -3px;"> Adana 7°</li><li data-v-246a7d0f="" style="color: var(--navbar_item_color);"><img data-v-246a7d0f="" src="https://static.bundle.app/bundleWebWeatherIcons/clearsky_day.png" width="18px" style="margin-right: 12px; margin-top: -3px;"> Antalya 8°</li><li data-v-246a7d0f="" style="color: var(--navbar_item_color);"><img data-v-246a7d0f="" src="https://static.bundle.app/bundleWebWeatherIcons/clearsky_day.png" width="18px" style="margin-right: 12px; margin-top: -3px;"> Denizli 3°</li><li data-v-246a7d0f="" style="color: var(--navbar_item_color);"><img data-v-246a7d0f="" src="https://static.bundle.app/bundleWebWeatherIcons/clearsky_day.png" width="18px" style="margin-right: 12px; margin-top: -3px;"> Eskişehir -1°</li><li data-v-246a7d0f="" style="color: var(--navbar_item_color);"><img data-v-246a7d0f="" src="https://static.bundle.app/bundleWebWeatherIcons/clearsky_day.png" width="18px" style="margin-right: 12px; margin-top: -3px;"> Kayseri -2°</li><li data-v-246a7d0f="" style="color: var(--navbar_item_color);"><img data-v-246a7d0f="" src="https://static.bundle.app/bundleWebWeatherIcons/clearsky_day.png" width="18px" style="margin-right: 12px; margin-top: -3px;"> Mersin 7°</li><li data-v-246a7d0f="" style="color: var(--navbar_item_color);"><img data-v-246a7d0f="" src="https://static.bundle.app/bundleWebWeatherIcons/clearsky_day.png" width="18px" style="margin-right: 12px; margin-top: -3px;"> Samsun 6°</li><li data-v-246a7d0f="" style="color: var(--navbar_item_color);"><img data-v-246a7d0f="" src="https://static.bundle.app/bundleWebWeatherIcons/clearsky_day.png" width="18px" style="margin-right: 12px; margin-top: -3px;"> Urfa 3°</li></ul></span></div> <a href="/tr/newsletter" target="_blak-nk" class="bundleRouter" data-v-127e1cb8=""><div class="bundleHeaderItem" data-v-127e1cb8=""><span class="bundleHeaderText" data-v-127e1cb8="">BÜLTENLER</span></div></a> <a href="https://about.bundle.app" target="_blank" class="bundleRouter" data-v-127e1cb8=""><div class="bundleHeaderItem" data-v-127e1cb8=""><span class="bundleHeaderText" data-v-127e1cb8="">BUNDLE APP</span></div></a> <div class="bundleHeaderItem" data-v-127e1cb8="">
+                        <span class="bundleHeaderText" data-v-127e1cb8="">
+                            <span class="LocaleSwitcher" data-v-40607446="" data-v-127e1cb8="">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACCSURBVHgB3dBLDYAwEIThkbKSkICESsAJEpCwUpBQCVAOJGTS9LHdXviTvU7TD/hDS7pr0j3bkHRx0gPy/iJMGN+YSh3HFZnEiSriQ8N5UAVU0oFxRUMCG1WRhrNQVWm4HqodhgRtVCc6aLgWqhWDlahMNJwgTzVEw+WoVjh3wEBzA+/o1b0XdqEFAAAAAElFTkSuQmCC" width="7px" alt="" class="visibleNavbarDesktop" style="margin-right: 10px;" data-v-40607446=""> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAATCAYAAACKsM07AAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACRSURBVHgB7dHLDYAgEEXRoQNLsARKogRLsQNKwU4owRKew8ZEHcJv2HkTYly9cCD6K2QALPy1NCFjzEE8sGNeNg2sfE7oF+6r8M8G3SKf9eGVFqGX+zwI9Kh89tUxThXxphFGAvpzVAr9VJ5qQztVRIlmkMpRa6inqqcRRkpUsZlGGAnQpBEGclT9NMKI66W5ADtncbCnLa/BAAAAAElFTkSuQmCC" width="7px" alt="" class="visibleNavbarDesktop" style="margin-right:10px;display:none;" data-v-40607446=""> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAATCAYAAACKsM07AAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACRSURBVHgB7dHLDYAgEEXRoQNLsARKogRLsQNKwU4owRKew8ZEHcJv2HkTYly9cCD6K2QALPy1NCFjzEE8sGNeNg2sfE7oF+6r8M8G3SKf9eGVFqGX+zwI9Kh89tUxThXxphFGAvpzVAr9VJ5qQztVRIlmkMpRa6inqqcRRkpUsZlGGAnQpBEGclT9NMKI66W5ADtncbCnLa/BAAAAAElFTkSuQmCC" width="7px" alt="" class="visibleNavbarTablet" data-v-40607446=""> <span class="langSpan" style="text-transform: uppercase" data-v-40607446="">Tr</span> <ul class="LocaleSwitcherUl" style="display: none" data-v-40607446="">
+                                    <a href="/gundem" style="text-decoration: none; color: var(--navbar_item_color);" data-v-40607446="" class="">
+                                    <li data-v-40607446="">
+                                        <img src="/_nuxt/img/flag_tr.c8a2d46.png" width="16px" style="margin-right:8px;margin-top:-3px;" data-v-40607446="">
+                                        TÜRKİYE
+                                    </li></a>
+                                    <a href="/en/breakingNews" style="text-decoration: none; color: var(--navbar_item_color);" data-v-40607446="" class="">
+                                    <li data-v-40607446="">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAmCAYAAACRWlj1AAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKrSURBVHgB7Zg/ThwxFIffLLRItFBRQZkVHAByAA4AB4AyCC7AAUCpoUoD1BH0gR5WaaFKBS0C+om/jJ7GWN5dT/wGLaP9pNGMZ2ct//z+2RaZMmWiKfRhdbXcc7cvZSlL8okpCnl2t5+DQfHjX7vfL+dnZuSXE9aXDuH0/HbX19leT753TRw4S/bdtddzzxvSXb4hcEm6y3xPOk7nBc7KB7C4KLK2VrdfX0UeH0UeHqR1WhM4NyeyvS2ytVU9x0Dk3Z3I6Wn13AaFK/ClGIOwnZ3hwkKwKCLPz8UcU4EIOjgQ2dxM+/7pSWRhoW5fXIgcHYkppknm8DBdHJydVd9fX1dt3Jk+LDETuLvrVgwb6d8Tczc31R2rn5xU7xGMi1th4qJkycvLtG/VQliN2At/Uw/gbpF4TCxIQkmFieAKxcHxcf0eq1qQLRDrpcbduLqHOM2k1M3ULDyKbIHLy/XzsDTPwG9v06xCJgXENYnpYWQL1BUK1sHFNFn4EG8koZSYYjIoH+BP3v+SLVDd6OWlulOwYyKbcH//vu8czMqEzjpYiLTCbC26svK+jUjeEUe4cVjAccWrq9paPmq5WKZtSrZABkgW9Zdcig6QTMsVomtWFtw+GnsTUQc19TPr/pYolbDE+OVhMJBssgUy+xp/ZEof3NSPzRhhIlHBWC/mvk0xSTIsmoHZ963IIHHBUSKJUcoIMcoEqUAmxwKz7RIFmtgh7ogtP36IPwYci9MY/LfJrmQUZmWCVQricDlKhF+kGfD+flo/9BG6eg5mAtUdGSAWw6K4nWbPt7fxffBf+rA8vjA/soi5I4lonNvpvtD6IKqVMxnclN05sThuuaU7CCxuUdhDWhGo6I5gfb2yrL9CwVJYNrbxtaRVgZPA9Oj+s4PAZ+koLvj+/AVoWv44bbc8GQAAAABJRU5ErkJggg==" width="16px" style="margin-right:8px;margin-top:-3px;" data-v-40607446="">
+                                        GLOBAL
+                                    </li></a>
+                                    <a href="/de/nachrichten" style="text-decoration: none; color: var(--navbar_item_color);" data-v-40607446="" class="">
+                                    <li data-v-40607446="">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAnCAYAAABaBotQAAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADCSURBVHgB7dm9CcJQFMXxc0N6bd1CBHtHyAjZQDfICq6QxtoR7MWPBYQ3gi6Q540Q1NrGc3N+cJRY+ScpHsTwNvVV4Hf3XX3p88fGl4OtGeLqP/+jv2xj/nHxzRFT6gMzAisQnALZKZCdAtmFDyx3iM1uOslwUyA7BbJTIDsFsot/Fi1nCM3yWWdRagpkp0B2CmQ3gkD7ftUbTCrQoUVUGa29vk/Y+p1cI5bWFqhtuMpHrPyBrXwTMOvw8O1tiUN/+QS0pYb1EJgfXgAAAABJRU5ErkJggg==" width="16px" style="margin-right:8px;margin-top:-3px;" data-v-40607446="">
+                                        ALMANYA
+                                    </li></a>
+                                </ul>
+                            </span>
+                        </span>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+        </div>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - BundleNews.UI - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+
+    </div>
+    <div class="bundleContainer">
+        <div data-v-3e2c34d8="" class="row" style="width: 100%;max-width: 1024px;margin: 0px auto;">
+            @RenderBody()
         </div>
-    </footer>
+        
+    </div>
+    </div>
+
+
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>
+
 </html>

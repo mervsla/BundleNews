@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 
 namespace BundleNews.UI.Controllers
 {
-    
+    [Route("[controller]/[action]")]
+    [ApiController]
     public class RssController : Controller
     {
         IRssService _rssGeneratorService;
